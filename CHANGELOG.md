@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.0.2
+
+[compare changes](https://github.com/sandros94/s94.dev/compare/v0.0.1...v0.0.2)
+
+### 🏡 Chore
+
+- Enable R2 ([3c77a75](https://github.com/sandros94/s94.dev/commit/3c77a75))
+- Use deployment hooks ([ee7fcbd](https://github.com/sandros94/s94.dev/commit/ee7fcbd))
+
+### ❤️ Contributors
+
+- Sandros94 ([@Sandros94](http://github.com/Sandros94))
+
 ## v0.0.1
 
 
