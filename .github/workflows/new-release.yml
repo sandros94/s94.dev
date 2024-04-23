@@ -7,26 +7,7 @@ on:
 jobs:
   push:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ github.event.release.tag_name }}
-
-      - name: Configure Git
+      - name: Cloudflare deploy hook
         run: |
-          git config --global user.name "${{ github.event.release.author.login }}"
-          git config --global user.email "${{ github.event.release.author.email }}"
-
-      - name: Push to cd-production
-        if: github.event.release.prerelease == false
-        run: |
-          git push --force origin HEAD:cd-production
-
-      # Disabled until https://github.com/unjs/changelogen/issues/91 is added
-      # - name: Push to cd-preview
-      #   if: github.event.release.prerelease == true
-      #   run: |
-      #     git push --force origin HEAD:cd-preview
+          curl -X POST "{{ secrets.CLOUDFLARE_DEPLOY_HOOK }}"
