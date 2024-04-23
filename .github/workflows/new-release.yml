@@ -2,7 +2,7 @@ name: Push to Cloudflare Pages
 
 on:
   release:
-    types: [published, prereleased]
+    types: published
 
 jobs:
   push:
