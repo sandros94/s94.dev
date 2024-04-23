@@ -23,10 +23,10 @@ jobs:
       - name: Push to cd-production
         if: github.event.release.prerelease == false
         run: |
-          git push origin HEAD:cd-production
+          git push --force origin HEAD:cd-production
 
-      # Disabled until https://github.com/unjs/changelogen/issues/91
+      # Disabled until https://github.com/unjs/changelogen/issues/91 is added
       # - name: Push to cd-preview
       #   if: github.event.release.prerelease == true
       #   run: |
-      #     git push origin HEAD:cd-preview
+      #     git push --force origin HEAD:cd-preview
