@@ -15,6 +15,61 @@ export default defineNuxtConfig({
     '@nuxt/content',
   ],
 
+  fonts: {
+    families: [
+      {
+        name: 'Montserrat',
+        provider: 'google',
+        weights: [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800,
+          900,
+        ],
+      },
+      {
+        name: 'Newsreader',
+        provider: 'google',
+        weights: [
+          400,
+          500,
+          600,
+          700,
+        ],
+      },
+      {
+        name: 'Fira Code',
+        provider: 'google',
+        weights: [
+          300,
+          400,
+          500,
+          600,
+          700,
+        ],
+      },
+    ],
+  },
+
+  tailwindcss: {
+    config: {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat'],
+            serif: ['Newsreader'],
+            mono: ['Fira Code'],
+          },
+        },
+      },
+    },
+  },
+
   hub: {
     database: true,
     kv: true,
