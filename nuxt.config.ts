@@ -1,47 +1,42 @@
-import tailwindTypography from '@tailwindcss/typography'
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
+  extends: ['gh:sandros94/ui#25edaf2'],
+
   modules: [
-    '@nuxthub/core',
     '@nuxt/eslint',
+    '@nuxt/fonts',
     '@nuxt/ui',
+    '@vueuse/nuxt',
+    '@nuxthub/core',
+    '@nuxt/image',
+    '@nuxtjs/mdc',
     '@nuxt/content',
   ],
+
   hub: {
     database: true,
     kv: true,
     blob: true,
     cache: true,
   },
+
   nitro: {
     experimental: {
       openAPI: true
     }
   },
-  ui: {
-    icons: {},
-  },
-  tailwindcss: {
-    config: {
-      content: [],
-      plugins: [tailwindTypography],
-    },
-  },
+
   content: {
     highlight: {
       theme: {
         default: 'vitesse-light',
         dark: 'vitesse-dark',
       },
-      themes: [
-        {
-          
-        }
-      ]
     },
   },
+
   vite: {
     build: {
       rollupOptions: {
@@ -51,10 +46,4 @@ export default defineNuxtConfig({
       },
     },
   },
-  runtimeConfig: {
-    oldBackend: {
-      baseURL: ''
-    }
-  }
 })
-
