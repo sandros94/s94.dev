@@ -1,6 +1,31 @@
 # Changelog
 
 
+## v0.0.3
+
+[compare changes](https://github.com/sandros94/s94.dev/compare/v0.0.2...v0.0.3)
+
+### 🚀 Enhancements
+
+- Add workflow dispatch ([7d2fea9](https://github.com/sandros94/s94.dev/commit/7d2fea9))
+
+### 🩹 Fixes
+
+- Workflow env variable ([9ae85aa](https://github.com/sandros94/s94.dev/commit/9ae85aa))
+- Only trigger deployment for stable releases ([d8a638a](https://github.com/sandros94/s94.dev/commit/d8a638a))
+
+### 💅 Refactors
+
+- Reinit project ([ec55d2e](https://github.com/sandros94/s94.dev/commit/ec55d2e))
+
+### 🏡 Chore
+
+- Rename gh action ([d38fd08](https://github.com/sandros94/s94.dev/commit/d38fd08))
+
+### ❤️ Contributors
+
+- Sandros94 ([@Sandros94](http://github.com/Sandros94))
+
 ## v0.0.2
 
 [compare changes](https://github.com/sandros94/s94.dev/compare/v0.0.1...v0.0.2)
