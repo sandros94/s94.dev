@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  extends: ['gh:sandros94/ui#25edaf2'],
+  extends: ['gh:sandros94/ui#f77b037'],
 
   modules: [
     '@nuxt/eslint',

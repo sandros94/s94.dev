@@ -1,14 +1,17 @@
 <template>
   <div>
-    <SHeader
-      :links="links"
-      :socials="socials"
-      links-variant="elegant"
-      title="s94.dev"
-      sticky
-    />
     <NuxtLayout name="page">
-      <SMain :ui="{ base: 'h-full' }">
+      <template #header>
+      <SHeader
+        :links="links"
+        :socials="socials"
+        hide-panel
+        links-variant="elegant"
+        title="s94.dev"
+        sticky
+      />
+      </template>
+      <SMain centered>
         <slot />
       </SMain>
     </NuxtLayout>

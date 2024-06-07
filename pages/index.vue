@@ -6,7 +6,7 @@
         under construction
       </h1>
     </div>
-    <ULink class="block pt-12 underline" to="https://github.com/sandros94/s94.dev" target="_blank">
+    <ULink class="block pt-12 underline text-primary" to="https://github.com/sandros94/s94.dev" target="_blank">
       sandros94/s94.dev
     </ULink>
   </div>
