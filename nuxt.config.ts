@@ -2,17 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  extends: ['gh:sandros94/ui#f77b037'],
-
-  future: {
-    compatibilityVersion: 4,
-  },
+  extends: [
+    ['gh:sandros94/ui/main', { install: true }],
+  ],
 
   modules: [
     '@nuxt/eslint',
-    '@nuxt/fonts',
-    '@nuxt/ui',
-    '@vueuse/nuxt',
     '@nuxthub/core',
     '@nuxt/image',
     '@nuxtjs/mdc',
