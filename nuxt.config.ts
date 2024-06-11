@@ -4,6 +4,10 @@ export default defineNuxtConfig({
 
   extends: ['gh:sandros94/ui#f77b037'],
 
+  future: {
+    compatibilityVersion: 4,
+  },
+
   modules: [
     '@nuxt/eslint',
     '@nuxt/fonts',
