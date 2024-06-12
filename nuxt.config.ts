@@ -10,12 +10,8 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/eslint',
-    '@nuxt/fonts',
-    '@nuxt/ui',
-    '@vueuse/nuxt',
     '@nuxthub/core',
     '@nuxt/image',
-    '@nuxtjs/mdc',
     '@nuxt/content',
   ],
 
