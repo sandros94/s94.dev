@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   extends: [
-    ['gh:sandros94/ui/main#468b12a', { install: true }],
+    ['gh:sandros94/ui/main#b730806', { install: true }],
   ],
 
   future: {
