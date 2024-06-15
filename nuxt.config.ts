@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     '@nuxthub/core',
     '@nuxt/image',
     '@nuxt/content',
+    'nuxt-surrealdb',
   ],
 
   fonts: {
@@ -77,6 +78,17 @@ export default defineNuxtConfig({
     kv: true,
     blob: true,
     cache: true,
+  },
+
+  surrealdb: {
+    databases: {
+      nasa: {
+        host: 'https://surrealdb.s94.dev',
+        ws: 'wss://surrealdb.s94.dev',
+        NS: 'demo',
+        DB: 'nasa',
+      },
+    },
   },
 
   nitro: {

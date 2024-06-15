@@ -7,6 +7,12 @@
 <script setup lang="ts">
 import type { Links } from '#s94-ui/types'
 
+useState<Links | undefined>('nav-links').value = [
+  {
+    label: 'Nasa EVA',
+    to: '/eva',
+  },
+]
 useState('social-links').value = [
   {
     icon: 'i-simple-icons-github',
