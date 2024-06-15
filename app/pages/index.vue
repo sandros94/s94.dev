@@ -7,7 +7,7 @@
       </h1>
     </div>
     <span class="block pt-12">
-      <ULink class="underline text-primary" to="https://github.com/sandros94/s94.dev" target="_blank">
+      <ULink class="underline text-primary tracking-wide" to="https://github.com/sandros94/s94.dev" target="_blank">
         sandros94/s94.dev
       </ULink>
     </span>
