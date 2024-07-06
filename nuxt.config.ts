@@ -12,10 +12,10 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/eslint',
-    '@nuxthub/core',
     '@nuxt/image',
     '@nuxt/content',
     'nuxt-surrealdb',
+    'nuxt-auth-utils',
   ],
 
   fonts: {
@@ -71,13 +71,6 @@ export default defineNuxtConfig({
         },
       },
     },
-  },
-
-  hub: {
-    database: true,
-    kv: true,
-    blob: true,
-    cache: true,
   },
 
   surrealdb: {
