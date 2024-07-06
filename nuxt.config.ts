@@ -75,6 +75,12 @@ export default defineNuxtConfig({
 
   surrealdb: {
     databases: {
+      default: {
+        host: 'https://surrealdb.s94.dev',
+        ws: 'wss://surrealdb.s94.dev',
+        NS: 's94',
+        DB: 'website',
+      },
       nasa: {
         host: 'https://surrealdb.s94.dev',
         ws: 'wss://surrealdb.s94.dev',
