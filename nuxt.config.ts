@@ -2,9 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  extends: [
-    ['gh:sandros94/ui/main#b730806', { install: true }],
-  ],
+  extends: ['gh:sandros94/ui/main#3281e19'],
 
   future: {
     compatibilityVersion: 4,
@@ -71,6 +69,10 @@ export default defineNuxtConfig({
         },
       },
     },
+  },
+
+  ui: {
+    icons: ['simple-icons', 'ph'],
   },
 
   surrealdb: {

@@ -24,14 +24,18 @@
     "@nuxt/image": "^1.7.0",
     "nuxt": "^3.12.1",
     "nuxt-auth-utils": "^0.1.0",
-    "nuxt-surrealdb": "^0.1"
+    "nuxt-surrealdb": "^0.1",
+    "tailwind-variants": "^0.2.1"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.217",
+    "@iconify-json/ph": "^1.1.13",
+    "@iconify-json/simple-icons": "^1.1.108",
     "@nuxt/devtools": "^1.1.5",
     "@nuxt/eslint": "^0.3.13",
+    "@nuxt/fonts": "^0.7.1",
     "@nuxt/kit": "^3.12",
     "@nuxt/ui": "2.17.0",
+    "@vueuse/nuxt": "^10.11.0",
     "changelogen": "^0.5.5",
     "eslint": "^9.4.0",
     "vue-tsc": "^2.0.21",
